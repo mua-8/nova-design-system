@@ -48,7 +48,13 @@ export function Testimonials() {
         </Stagger>
 
         {/* Logo marquee */}
-        <div className="relative overflow-hidden mask-fade py-6">
+        <div
+          className="relative overflow-hidden py-6"
+          style={{
+            maskImage: "linear-gradient(90deg, transparent, black 15%, black 85%, transparent)",
+            WebkitMaskImage: "linear-gradient(90deg, transparent, black 15%, black 85%, transparent)",
+          }}
+        >
           <div className="flex gap-16 animate-marquee w-max">
             {[...logos, ...logos].map((l, i) => (
               <span key={i} className="font-display font-semibold text-2xl tracking-widest text-foreground-subtle whitespace-nowrap">
