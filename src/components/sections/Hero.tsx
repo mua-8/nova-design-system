@@ -114,7 +114,7 @@ export function Hero() {
                 <div className="h-2.5 w-2.5 rounded-full bg-destructive/70" />
                 <div className="h-2.5 w-2.5 rounded-full bg-accent/70" />
                 <div className="h-2.5 w-2.5 rounded-full bg-success/70" />
-                <div className="ml-3 text-xs font-mono text-foreground-subtle">nexus.agency / dashboard</div>
+                <div className="ml-3 text-xs font-mono text-foreground-subtle">kush.studio / dashboard</div>
               </div>
               <div className="grid grid-cols-3 gap-3 p-6">
                 {["Revenue", "Active users", "Automations"].map((label, i) => (
