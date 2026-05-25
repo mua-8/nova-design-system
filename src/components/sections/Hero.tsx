@@ -37,7 +37,7 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 animate-ping" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            NexoraX — Booking Q3 · 2 slots left
+            Kush — AI & Software Studio · Booking Q3
           </motion.div>
 
           <motion.h1
@@ -46,9 +46,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.12, ease }}
             className="text-display-2xl font-display font-semibold mb-6"
           >
-            <span className="gradient-text-hero">Building </span>
-            <span className="gradient-text">Intelligent</span>
-            <span className="gradient-text-hero"> Digital Systems</span>
+            <span className="gradient-text-hero">Build. </span>
+            <span className="gradient-text">Automate.</span>
+            <span className="gradient-text-hero"> Scale.</span>
           </motion.h1>
 
           <motion.p
@@ -114,7 +114,7 @@ export function Hero() {
                 <div className="h-2.5 w-2.5 rounded-full bg-destructive/70" />
                 <div className="h-2.5 w-2.5 rounded-full bg-accent/70" />
                 <div className="h-2.5 w-2.5 rounded-full bg-success/70" />
-                <div className="ml-3 text-xs font-mono text-foreground-subtle">nexus.agency / dashboard</div>
+                <div className="ml-3 text-xs font-mono text-foreground-subtle">kush.studio / dashboard</div>
               </div>
               <div className="grid grid-cols-3 gap-3 p-6">
                 {["Revenue", "Active users", "Automations"].map((label, i) => (

@@ -47,8 +47,8 @@ export function Footer() {
         </div>
 
         <div className="mt-14 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-foreground-subtle">© {new Date().getFullYear()} NexoraX. Crafted with intent.</p>
-          <p className="text-xs text-foreground-subtle font-mono">Built on intelligence · Shipped with care</p>
+          <p className="text-xs text-foreground-subtle">© {new Date().getFullYear()} Kush. Build. Automate. Scale.</p>
+          <p className="text-xs text-foreground-subtle font-mono">AI & Software Studio · Crafted with intent</p>
         </div>
       </div>
     </footer>
