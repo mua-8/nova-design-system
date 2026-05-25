@@ -2,6 +2,7 @@ import { ArrowRight, Sparkles, Star } from "lucide-react";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { AuroraBg } from "@/components/effects/AuroraBg";
+import { Logo } from "@/components/brand/Logo";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -13,6 +14,20 @@ export function Hero() {
       <div className="container-page relative">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
+            initial={{ opacity: 0, scale: 0.92 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.9, ease }}
+            className="flex justify-center mb-8"
+          >
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <Logo variant="mark" className="h-24 lg:h-32 w-auto" />
+            </motion.div>
+          </motion.div>
+
+          <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
@@ -22,7 +37,7 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 animate-ping" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            Booking Q3 — 2 slots left
+            NexoraX — Booking Q3 · 2 slots left
           </motion.div>
 
           <motion.h1
@@ -31,9 +46,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.12, ease }}
             className="text-display-2xl font-display font-semibold mb-6"
           >
-            <span className="gradient-text-hero">We engineer the </span>
-            <span className="gradient-text">intelligent</span>
-            <span className="gradient-text-hero"> software your business needs to scale.</span>
+            <span className="gradient-text-hero">Building </span>
+            <span className="gradient-text">Intelligent</span>
+            <span className="gradient-text-hero"> Digital Systems</span>
           </motion.h1>
 
           <motion.p
@@ -42,7 +57,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.24, ease }}
             className="text-lg lg:text-xl text-foreground-muted leading-relaxed max-w-2xl mx-auto mb-10"
           >
-            Websites, mobile apps, AI automations, Telegram bots, and n8n workflows — built end-to-end by a senior team for founders who refuse to ship average.
+            We build websites, apps, AI systems, and automation workflows for modern businesses.
           </motion.p>
 
           <motion.div
@@ -53,11 +68,11 @@ export function Hero() {
           >
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
-                Book a free strategy call <ArrowRight className="ml-1" />
+                Start a Project <ArrowRight className="ml-1" />
               </a>
             </Button>
             <Button variant="glass" size="xl" asChild>
-              <a href="#portfolio">See our work</a>
+              <a href="#pricing">View Pricing</a>
             </Button>
           </motion.div>
 
