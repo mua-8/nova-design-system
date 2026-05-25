@@ -15,17 +15,17 @@ import { Contact } from "@/components/sections/Contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "NexoraX — Building Intelligent Digital Systems" },
+      { title: "Kush — Build. Automate. Scale." },
       {
         name: "description",
         content:
-          "NexoraX builds websites, apps, AI systems, and automation workflows for modern businesses.",
+          "Kush is an AI & software studio building websites, apps, AI systems, and automation workflows for modern businesses.",
       },
-      { property: "og:title", content: "NexoraX — Intelligent Digital Systems" },
+      { property: "og:title", content: "Kush — AI & Software Studio" },
       {
         property: "og:description",
         content:
-          "Websites, mobile apps, AI automations and n8n workflows — engineered by NexoraX.",
+          "Build. Automate. Scale. — Websites, mobile apps, AI automations and n8n workflows by Kush.",
       },
     ],
   }),
