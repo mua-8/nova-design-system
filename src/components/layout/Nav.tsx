@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/brand/Logo";
 import { cn } from "@/lib/utils";
 
 const links = [
@@ -37,16 +38,8 @@ export function Nav() {
             scrolled ? "glass" : "bg-transparent border border-transparent",
           )}
         >
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="relative">
-              <div
-                className="h-8 w-8 rounded-lg flex items-center justify-center glow-primary"
-                style={{ background: "var(--gradient-primary)" }}
-              >
-                <Sparkles className="h-4 w-4 text-white" />
-              </div>
-            </div>
-            <span className="font-display font-semibold text-lg tracking-tight">Nexus</span>
+          <Link to="/" className="group">
+            <Logo variant="lockup" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
@@ -63,10 +56,10 @@ export function Nav() {
 
           <div className="hidden md:flex items-center gap-2">
             <Button variant="ghost" size="sm" asChild>
-              <a href="/#contact">Contact</a>
+              <a href="/#pricing">View Pricing</a>
             </Button>
             <Button variant="hero" size="sm" asChild>
-              <a href="/#contact">Book a call</a>
+              <a href="/#contact">Start a Project</a>
             </Button>
           </div>
 
@@ -92,7 +85,7 @@ export function Nav() {
               </a>
             ))}
             <Button variant="hero" className="mt-2" asChild>
-              <a href="/#contact" onClick={() => setOpen(false)}>Book a call</a>
+              <a href="/#contact" onClick={() => setOpen(false)}>Start a Project</a>
             </Button>
           </div>
         )}
