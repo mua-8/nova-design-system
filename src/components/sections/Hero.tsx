@@ -37,7 +37,7 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 animate-ping" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            NexoraX — Booking Q3 · 2 slots left
+            Kush — AI & Software Studio · Booking Q3
           </motion.div>
 
           <motion.h1
