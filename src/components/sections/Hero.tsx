@@ -47,8 +47,7 @@ export function Hero() {
             className="text-display-2xl font-display font-semibold mb-6"
           >
             <span className="gradient-text-hero">Build. </span>
-            <span class
-ame="gradient-text">Automate.</span>
+            <span className="gradient-text">Automate.</span>
             <span className="gradient-text-hero"> Scale.</span>
           </motion.h1>
 
