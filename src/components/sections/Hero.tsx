@@ -46,9 +46,10 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.12, ease }}
             className="text-display-2xl font-display font-semibold mb-6"
           >
-            <span className="gradient-text-hero">Building </span>
-            <span className="gradient-text">Intelligent</span>
-            <span className="gradient-text-hero"> Digital Systems</span>
+            <span className="gradient-text-hero">Build. </span>
+            <span class
+ame="gradient-text">Automate.</span>
+            <span className="gradient-text-hero"> Scale.</span>
           </motion.h1>
 
           <motion.p
