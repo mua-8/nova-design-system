@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import mark from "@/assets/nexorax-mark.png";
-import full from "@/assets/nexorax-logo.png";
+import mark from "@/assets/kush-mark.png";
+import full from "@/assets/kush-logo.png";
 
 type LogoProps = {
   variant?: "mark" | "full" | "lockup";
@@ -13,7 +13,7 @@ export function Logo({ variant = "lockup", className, glow = true }: LogoProps) 
     return (
       <img
         src={full}
-        alt="NexoraX"
+        alt="Kush — AI & Software Studio"
         className={cn("select-none", glow && "drop-shadow-[0_0_24px_oklch(0.65_0.22_265/0.55)]", className)}
         draggable={false}
       />
@@ -23,7 +23,7 @@ export function Logo({ variant = "lockup", className, glow = true }: LogoProps) 
     return (
       <img
         src={mark}
-        alt="NexoraX"
+        alt="Kush"
         className={cn("select-none", glow && "drop-shadow-[0_0_18px_oklch(0.65_0.22_265/0.6)]", className)}
         draggable={false}
       />
@@ -39,7 +39,7 @@ export function Logo({ variant = "lockup", className, glow = true }: LogoProps) 
         draggable={false}
       />
       <span className="font-display font-semibold text-lg tracking-tight">
-        Nexora<span className="gradient-text">X</span>
+        Kus<span className="gradient-text">h</span>
       </span>
     </span>
   );
