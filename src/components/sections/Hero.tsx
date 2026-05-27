@@ -37,7 +37,7 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 animate-ping" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            Kush — AI & Software Studio · Booking Q3
+            Kush — AI & Software Studio · Now booking Q3
           </motion.div>
 
           <motion.h1
@@ -46,9 +46,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.12, ease }}
             className="text-display-2xl font-display font-semibold mb-6"
           >
-            <span className="gradient-text-hero">Build. </span>
-            <span className="gradient-text">Automate.</span>
-            <span className="gradient-text-hero"> Scale.</span>
+            <span className="gradient-text-hero">Building </span>
+            <span className="gradient-text">Intelligent</span>
+            <span className="gradient-text-hero"> Digital Systems.</span>
           </motion.h1>
 
           <motion.p
@@ -57,7 +57,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.24, ease }}
             className="text-lg lg:text-xl text-foreground-muted leading-relaxed max-w-2xl mx-auto mb-10"
           >
-            We build websites, apps, AI systems, and automation workflows for modern businesses.
+            We help businesses build websites, apps, AI systems, and automation workflows using modern, scalable technologies.
           </motion.p>
 
           <motion.div
@@ -72,7 +72,7 @@ export function Hero() {
               </a>
             </Button>
             <Button variant="glass" size="xl" asChild>
-              <a href="#pricing">View Pricing</a>
+              <a href="#technologies">Explore Technologies</a>
             </Button>
           </motion.div>
 
@@ -88,19 +88,18 @@ export function Hero() {
                   <Star key={i} className="h-4 w-4 fill-accent text-accent" />
                 ))}
               </div>
-              <span>4.9 from 60+ founders</span>
+              <span>4.9 from 120+ customers</span>
             </div>
             <div className="hidden sm:block h-4 w-px bg-border" />
             <div className="flex items-center gap-2">
               <Sparkles className="h-4 w-4 text-primary-glow" />
-              <span>20+ products shipped</span>
+              <span>20+ technologies mastered</span>
             </div>
             <div className="hidden sm:block h-4 w-px bg-border" />
-            <div>Trusted by startups in 14 countries</div>
+            <div>Trusted by teams in 14 countries</div>
           </motion.div>
         </div>
 
-        {/* Floating preview card */}
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
@@ -114,10 +113,10 @@ export function Hero() {
                 <div className="h-2.5 w-2.5 rounded-full bg-destructive/70" />
                 <div className="h-2.5 w-2.5 rounded-full bg-accent/70" />
                 <div className="h-2.5 w-2.5 rounded-full bg-success/70" />
-                <div className="ml-3 text-xs font-mono text-foreground-subtle">kush.studio / dashboard</div>
+                <div className="ml-3 text-xs font-mono text-foreground-subtle">kush.studio / customer-dashboard</div>
               </div>
               <div className="grid grid-cols-3 gap-3 p-6">
-                {["Revenue", "Active users", "Automations"].map((label, i) => (
+                {["Revenue", "Active customers", "Automations"].map((label, i) => (
                   <div key={label} className="rounded-lg p-4 bg-card border border-border">
                     <p className="text-xs text-foreground-subtle">{label}</p>
                     <p className="text-2xl font-display font-semibold mt-1 gradient-text">

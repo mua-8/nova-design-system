@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Stats } from "@/components/sections/Stats";
 import { Services } from "@/components/sections/Services";
+import { Technologies } from "@/components/sections/Technologies";
+import { WhyKush } from "@/components/sections/WhyKush";
 import { Process } from "@/components/sections/Process";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Pricing } from "@/components/sections/Pricing";
@@ -15,17 +17,17 @@ import { Contact } from "@/components/sections/Contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Kush — Build. Automate. Scale." },
+      { title: "Kush — AI & Software Studio | Build. Automate. Scale." },
       {
         name: "description",
         content:
-          "Kush is an AI & software studio building websites, apps, AI systems, and automation workflows for modern businesses.",
+          "Kush is an AI & Software Studio building websites, mobile apps, AI systems, and automation workflows for modern businesses. Choose your stack — we ship it.",
       },
       { property: "og:title", content: "Kush — AI & Software Studio" },
       {
         property: "og:description",
         content:
-          "Build. Automate. Scale. — Websites, mobile apps, AI automations and n8n workflows by Kush.",
+          "Build. Automate. Scale. — Premium websites, apps, AI, and n8n automations by Kush.",
       },
     ],
   }),
@@ -39,6 +41,8 @@ function Index() {
       <Hero />
       <Stats />
       <Services />
+      <Technologies />
+      <WhyKush />
       <Process />
       <Portfolio />
       <Pricing />

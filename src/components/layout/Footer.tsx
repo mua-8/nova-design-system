@@ -8,10 +8,10 @@ export function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="col-span-2">
             <div className="mb-4">
-              <Logo variant="lockup" />
+              <Logo variant="lockup" className="h-10 w-auto" />
             </div>
             <p className="text-sm text-foreground-muted max-w-xs leading-relaxed">
-              Building intelligent digital systems for modern businesses — websites, apps, AI, and automation.
+              Kush is an AI & Software Studio. We help customers build websites, apps, AI systems, and automation workflows with modern scalable technologies.
             </p>
             <div className="flex gap-3 mt-6">
               {[Twitter, Linkedin, Github, Send].map((Icon, i) => (
@@ -27,9 +27,9 @@ export function Footer() {
           </div>
 
           {[
-            { title: "Services", items: ["Web Development", "Mobile Apps", "AI Automation", "Telegram Bots", "n8n Workflows"] },
-            { title: "Company", items: ["About", "Portfolio", "Pricing", "Contact"] },
-            { title: "Resources", items: ["Blog", "Process", "FAQ", "Terms", "Privacy"] },
+            { title: "Services", items: ["Website Development", "Mobile Apps", "AI Systems", "n8n Automation", "Dashboards", "SaaS Development"] },
+            { title: "Technologies", items: ["Next.js & React", "Node.js & Python", "PostgreSQL & Supabase", "n8n & OpenAI", "React Native & Flutter"] },
+            { title: "Company", items: ["About", "Portfolio", "Pricing", "Process", "Contact"] },
           ].map((col) => (
             <div key={col.title}>
               <p className="text-eyebrow mb-4">{col.title}</p>
@@ -47,8 +47,8 @@ export function Footer() {
         </div>
 
         <div className="mt-14 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-foreground-subtle">© {new Date().getFullYear()} Kush. Build. Automate. Scale.</p>
-          <p className="text-xs text-foreground-subtle font-mono">AI & Software Studio · Crafted with intent</p>
+          <p className="text-xs text-foreground-subtle">© {new Date().getFullYear()} Kush — AI & Software Studio. Build. Automate. Scale.</p>
+          <p className="text-xs text-foreground-subtle font-mono">Crafted with intent · hello@kush.studio</p>
         </div>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/brand/Logo";
 import { cn } from "@/lib/utils";
@@ -8,9 +8,11 @@ import { cn } from "@/lib/utils";
 const links = [
   { to: "/", label: "Home" },
   { to: "/#services", label: "Services" },
-  { to: "/#portfolio", label: "Work" },
+  { to: "/#technologies", label: "Technologies" },
   { to: "/#pricing", label: "Pricing" },
-  { to: "/#faq", label: "FAQ" },
+  { to: "/#portfolio", label: "Portfolio" },
+  { to: "/#about", label: "About" },
+  { to: "/#contact", label: "Contact" },
 ];
 
 export function Nav() {
@@ -39,32 +41,29 @@ export function Nav() {
           )}
         >
           <Link to="/" className="group">
-            <Logo variant="lockup" />
+            <Logo variant="lockup" className="h-9 w-auto" />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1">
             {links.map((l) => (
               <a
                 key={l.to}
                 href={l.to}
-                className="px-3.5 py-2 text-sm text-foreground-muted hover:text-foreground transition-colors rounded-md"
+                className="px-3 py-2 text-sm text-foreground-muted hover:text-foreground transition-colors rounded-md"
               >
                 {l.label}
               </a>
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center gap-2">
-            <Button variant="ghost" size="sm" asChild>
-              <a href="/#pricing">View Pricing</a>
-            </Button>
+          <div className="hidden lg:flex items-center gap-2">
             <Button variant="hero" size="sm" asChild>
-              <a href="/#contact">Start a Project</a>
+              <a href="/#contact">Start Your Project <ArrowRight className="ml-1" /></a>
             </Button>
           </div>
 
           <button
-            className="md:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-foreground"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -73,7 +72,7 @@ export function Nav() {
         </div>
 
         {open && (
-          <div className="md:hidden mt-2 glass rounded-2xl p-4 flex flex-col gap-1 animate-in fade-in slide-in-from-top-2">
+          <div className="lg:hidden mt-2 glass rounded-2xl p-4 flex flex-col gap-1 animate-in fade-in slide-in-from-top-2">
             {links.map((l) => (
               <a
                 key={l.to}
@@ -85,7 +84,7 @@ export function Nav() {
               </a>
             ))}
             <Button variant="hero" className="mt-2" asChild>
-              <a href="/#contact" onClick={() => setOpen(false)}>Start a Project</a>
+              <a href="/#contact" onClick={() => setOpen(false)}>Start Your Project</a>
             </Button>
           </div>
         )}
