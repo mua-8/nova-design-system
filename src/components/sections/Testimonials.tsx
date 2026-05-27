@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const testimonials = [
-  { quote: "Nexus rebuilt our checkout in two weeks. Conversion went up 41% and we finally stopped fighting our own stack.", name: "Maya Patel", role: "Founder, Lumen Finance", initials: "MP" },
+  { quote: "Kush rebuilt our checkout in two weeks. Conversion went up 41% and we finally stopped fighting our own stack.", name: "Maya Patel", role: "Founder, Lumen Finance", initials: "MP" },
   { quote: "The n8n flows they wired up replaced two full-time roles. ROI in the first month, no joke.", name: "Daniel Okafor", role: "COO, Atlas Logistics", initials: "DO" },
-  { quote: "Their Telegram bot is doing 70% of our customer support. The team is sharper than any agency we've worked with.", name: "Sara Lindqvist", role: "Head of Ops, Verse", initials: "SL" },
+  { quote: "Their Telegram bot handles 70% of our customer support. Sharpest team we've worked with — period.", name: "Sara Lindqvist", role: "Head of Ops, Verse", initials: "SL" },
 ];
 
 const logos = ["LUMEN", "ATLAS", "VERSE", "NORTHWIND", "PULSE", "SYNTHIA", "ORBIT", "HALCYON"];
@@ -14,7 +14,7 @@ export function Testimonials() {
     <section className="relative py-24 lg:py-32">
       <div className="container-page">
         <Reveal className="max-w-2xl mb-16">
-          <p className="text-eyebrow mb-4">What founders say</p>
+          <p className="text-eyebrow mb-4">What customers say</p>
           <h2 className="text-h1 font-display">
             Outcomes that <span className="gradient-text">speak louder</span> than decks.
           </h2>
@@ -47,7 +47,6 @@ export function Testimonials() {
           ))}
         </Stagger>
 
-        {/* Logo marquee */}
         <div
           className="relative overflow-hidden py-6"
           style={{

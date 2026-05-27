@@ -20,12 +20,12 @@ export function CTA() {
                 Ready when you are
               </div>
               <h2 className="text-h1 lg:text-display-xl font-display mb-5 max-w-3xl mx-auto">
-                <span className="gradient-text-hero">Let's ship the </span>
-                <span className="gradient-text">thing</span>
-                <span className="gradient-text-hero"> you've been putting off.</span>
+                <span className="gradient-text-hero">Become our next </span>
+                <span className="gradient-text">success story</span>
+                <span className="gradient-text-hero">.</span>
               </h2>
               <p className="text-foreground-muted text-lg max-w-xl mx-auto mb-9">
-                Book a free 30-minute strategy call. We'll map your project and quote it within 48 hours.
+                Book a free 30-minute strategy call. Our team will map your project and send a quote within 48 hours.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button variant="hero" size="xl" asChild>

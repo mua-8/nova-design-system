@@ -1,10 +1,10 @@
 import { Reveal } from "@/components/motion/Reveal";
 
 const stats = [
-  { value: "20+", label: "Products shipped" },
+  { value: "120+", label: "Customer products shipped" },
   { value: "3.2×", label: "Avg conversion lift" },
   { value: "14", label: "Countries served" },
-  { value: "98%", label: "Client retention" },
+  { value: "98%", label: "Customer retention" },
 ];
 
 export function Stats() {
