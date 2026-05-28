@@ -9,7 +9,7 @@ import { WhyKush } from "@/components/sections/WhyKush";
 import { Process } from "@/components/sections/Process";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Pricing } from "@/components/sections/Pricing";
-import { Testimonials } from "@/components/sections/Testimonials";
+
 import { FAQ } from "@/components/sections/FAQ";
 import { CTA } from "@/components/sections/CTA";
 import { Contact } from "@/components/sections/Contact";
@@ -46,7 +46,7 @@ function Index() {
       <Process />
       <Portfolio />
       <Pricing />
-      <Testimonials />
+      
       <FAQ />
       <CTA />
       <Contact />
