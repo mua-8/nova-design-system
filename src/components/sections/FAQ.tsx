@@ -7,13 +7,38 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "Which technologies do you use?", a: "We work across modern stacks: Next.js, React, Vue, Node.js, Python, Laravel, PostgreSQL, Supabase, React Native, Flutter, n8n, and OpenAI. Customers can choose a preferred stack or we recommend the best fit." },
-  { q: "How is pricing structured?", a: "Transparent fixed-scope quotes. Starter from $1,500, Business from $5,900, Enterprise custom. 50% upfront, 50% on delivery — no hidden fees." },
-  { q: "Can you automate my business workflows?", a: "Yes — we build n8n, OpenAI, Telegram, and WhatsApp automations that connect your CRM, billing, and ops. Many customers see ROI in the first month." },
-  { q: "Do you handle hosting and infrastructure?", a: "We deploy on edge infrastructure (Vercel, Cloudflare, Supabase) with monitoring built in. We can also deploy to your existing cloud (AWS, GCP, Azure)." },
-  { q: "What support do you offer after launch?", a: "Every project includes 30–60 days of post-launch support. Enterprise customers get priority SLA and 24/7 incident response." },
-  { q: "What's a typical timeline?", a: "Starter projects ship in 1–2 weeks, Business in 4–6 weeks. Enterprise engagements are ongoing with weekly milestones and demos." },
-  { q: "Who owns the code?", a: "You do. Everything is delivered to your GitHub on day one and stays yours forever — no platform lock-in, no recurring license fees." },
+  {
+    q: "How long does development take?",
+    a: "Basic websites ship in 3–7 days. Business systems take 2–4 weeks. Custom digital systems are scoped per engagement with weekly milestones and demos.",
+  },
+  {
+    q: "Can I request custom features?",
+    a: "Yes. Every project is built from scratch, so we can add custom modules, integrations, automations, and AI features tailored to your business.",
+  },
+  {
+    q: "Do you redesign existing websites?",
+    a: "Absolutely. We can rebuild outdated sites on a modern stack (Next.js, Tailwind, Supabase) while preserving SEO, content, and brand identity.",
+  },
+  {
+    q: "Do you provide hosting setup assistance?",
+    a: "Yes. We deploy on Vercel, Cloudflare, or Supabase by default, and can also configure custom domains, email, and DNS — included in every package.",
+  },
+  {
+    q: "Can I combine multiple services?",
+    a: "Definitely. Most customers combine website + dashboard, or website + automation. The Business package and Custom System are built exactly for this.",
+  },
+  {
+    q: "Do you build mobile apps?",
+    a: "Yes — we build cross-platform apps in React Native, Flutter, and Expo. One codebase ships to both iOS and Android stores.",
+  },
+  {
+    q: "Can you automate business workflows?",
+    a: "Yes. We build n8n, OpenAI, Telegram, and WhatsApp automations that connect your CRM, billing, notifications, and internal ops.",
+  },
+  {
+    q: "Who owns the code after delivery?",
+    a: "You do. Source code is delivered to your GitHub on day one — no platform lock-in, no recurring license fees.",
+  },
 ];
 
 export function FAQ() {
