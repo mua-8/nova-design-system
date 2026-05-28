@@ -2,12 +2,12 @@ import { ArrowUpRight } from "lucide-react";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const projects = [
-  { title: "Lumen Finance", tag: "Fintech · Dashboard", year: "2025", hue: "265" },
-  { title: "Atlas Logistics", tag: "n8n · AI Routing", year: "2025", hue: "295" },
-  { title: "Verse Studio", tag: "Mobile · iOS / Android", year: "2024", hue: "200" },
-  { title: "Synthia Bot", tag: "Telegram · LLM", year: "2024", hue: "265" },
-  { title: "Northwind CMS", tag: "Web · Headless", year: "2024", hue: "295" },
-  { title: "Pulse Analytics", tag: "SaaS · Realtime", year: "2025", hue: "200" },
+  { title: "Restaurant Dashboard", tag: "Concept Project · Admin", year: "2025", hue: "265", kind: "dashboard" },
+  { title: "AI Assistant Interface", tag: "Demo System · GPT + RAG", year: "2025", hue: "295", kind: "chat" },
+  { title: "Ecommerce Platform", tag: "Concept Project · Next.js", year: "2025", hue: "200", kind: "ecommerce" },
+  { title: "Automation Workflow Hub", tag: "Demo System · n8n", year: "2025", hue: "265", kind: "workflow" },
+  { title: "SaaS Analytics Dashboard", tag: "Internal Project · Realtime", year: "2025", hue: "295", kind: "analytics" },
+  { title: "Telegram Booking Bot", tag: "Demo System · Bot", year: "2025", hue: "200", kind: "bot" },
 ];
 
 export function Portfolio() {
@@ -16,16 +16,19 @@ export function Portfolio() {
       <div className="container-page">
         <Reveal className="max-w-2xl mb-16">
           <p className="text-eyebrow mb-4">Selected work</p>
-          <h2 className="text-h1 font-display">
-            Shipped, scaled, and <span className="gradient-text">measurably better</span>.
+          <h2 className="text-h1 font-display mb-4">
+            Concept projects & <span className="gradient-text">demo systems</span>.
           </h2>
+          <p className="text-foreground-muted text-lg">
+            A preview of the kinds of systems we design and build for customers — from dashboards and AI tools to automation workflows.
+          </p>
         </Reveal>
 
         <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((p) => (
             <StaggerItem key={p.title}>
               <a
-                href="#"
+                href="#contact"
                 className="group block relative aspect-[4/5] rounded-2xl overflow-hidden glass gradient-border transition-all duration-500 hover:-translate-y-1"
               >
                 <div
@@ -35,7 +38,6 @@ export function Portfolio() {
                   }}
                 />
                 <div className="absolute inset-0 grid-pattern opacity-40" />
-                {/* faux UI */}
                 <div className="absolute inset-x-6 top-1/2 -translate-y-1/2">
                   <div className="rounded-lg glass-strong p-3 mb-2">
                     <div className="h-1.5 w-12 rounded-full bg-white/30 mb-2" />
@@ -50,6 +52,10 @@ export function Portfolio() {
                       </div>
                     </div>
                   </div>
+                </div>
+
+                <div className="absolute top-4 left-4 px-2.5 py-1 rounded-full glass text-[10px] font-mono uppercase tracking-wider text-foreground-muted">
+                  {p.kind}
                 </div>
 
                 <div className="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/80 via-black/30 to-transparent">

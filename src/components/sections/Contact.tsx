@@ -3,6 +3,7 @@ import { Send, Mail, MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/motion/Reveal";
 import { toast } from "sonner";
+import { companyInfo, contactLinks } from "@/data/company";
 
 export function Contact() {
   const [loading, setLoading] = useState(false);
@@ -31,9 +32,9 @@ export function Contact() {
 
             <div className="space-y-3">
               {[
-                { icon: Mail, label: "hello@kush.studio", href: "mailto:hello@kush.studio" },
-                { icon: MessageCircle, label: "Telegram — @kushstudio", href: "https://t.me/" },
-                { icon: Send, label: "WhatsApp — Quick reply", href: "#" },
+                { icon: Mail, label: companyInfo.email, href: contactLinks.email },
+                { icon: MessageCircle, label: `Telegram — @${companyInfo.telegram}`, href: contactLinks.telegram },
+                { icon: Send, label: `WhatsApp — ${companyInfo.whatsapp}`, href: contactLinks.whatsapp },
               ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}

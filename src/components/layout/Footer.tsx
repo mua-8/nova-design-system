@@ -1,5 +1,15 @@
-import { Github, Twitter, Linkedin, Send } from "lucide-react";
+import { Github, Linkedin, Send, MessageCircle, Facebook, Mail } from "lucide-react";
 import { Logo } from "@/components/brand/Logo";
+import { companyInfo, contactLinks } from "@/data/company";
+
+const socials = [
+  { icon: Linkedin, href: contactLinks.linkedin, label: "LinkedIn" },
+  { icon: Github, href: contactLinks.github, label: "GitHub" },
+  { icon: MessageCircle, href: contactLinks.telegram, label: "Telegram" },
+  { icon: Send, href: contactLinks.whatsapp, label: "WhatsApp" },
+  { icon: Facebook, href: contactLinks.facebook, label: "Facebook" },
+  { icon: Mail, href: contactLinks.email, label: "Email" },
+];
 
 export function Footer() {
   return (
@@ -11,13 +21,16 @@ export function Footer() {
               <Logo variant="lockup" className="h-10 w-auto" />
             </div>
             <p className="text-sm text-foreground-muted max-w-xs leading-relaxed">
-              Kush is an AI & Software Studio. We help customers build websites, apps, AI systems, and automation workflows with modern scalable technologies.
+              {companyInfo.description}
             </p>
-            <div className="flex gap-3 mt-6">
-              {[Twitter, Linkedin, Github, Send].map((Icon, i) => (
+            <div className="flex flex-wrap gap-3 mt-6">
+              {socials.map(({ icon: Icon, href, label }) => (
                 <a
-                  key={i}
-                  href="#"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={label}
                   className="h-9 w-9 rounded-md glass flex items-center justify-center text-foreground-muted hover:text-foreground hover:bg-white/10 transition-colors"
                 >
                   <Icon className="h-4 w-4" />
@@ -47,8 +60,8 @@ export function Footer() {
         </div>
 
         <div className="mt-14 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-foreground-subtle">© {new Date().getFullYear()} Kush — AI & Software Studio. Build. Automate. Scale.</p>
-          <p className="text-xs text-foreground-subtle font-mono">Crafted with intent · hello@kush.studio</p>
+          <p className="text-xs text-foreground-subtle">© {new Date().getFullYear()} {companyInfo.name} — AI & Software Studio. {companyInfo.tagline}</p>
+          <p className="text-xs text-foreground-subtle font-mono">{companyInfo.email}</p>
         </div>
       </div>
     </footer>
